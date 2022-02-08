@@ -8,7 +8,7 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class FaceApiService {
 
-  private baseUrl = '<base url>';
+  private baseUrl = 'https://anvifaceapi.cognitiveservices.azure.com/face/v1.0';
 
   constructor(private http: HttpClient) { }
 
@@ -127,6 +127,6 @@ export class FaceApiService {
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    'Ocp-Apim-Subscription-Key': '<key>'
+    'Ocp-Apim-Subscription-Key': '77925b9f14804bdca3fb63296a9f409d'
   })
 };
